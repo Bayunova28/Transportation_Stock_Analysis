@@ -1,5 +1,5 @@
 plotly
-PIL==9.4.0
+pillow
 pandas
 keras
 datetime
