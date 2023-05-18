@@ -3,7 +3,7 @@ pillow
 pandas
 keras
 datetime
-math
+python-math
 scikit-learn
 streamlit
 numpy
