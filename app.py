@@ -2,8 +2,6 @@
 import plotly.graph_objects as go
 from PIL import Image
 import pandas as pd
-import tensorflow
-from tensorflow import keras
 from keras.models import load_model
 import datetime
 import math
