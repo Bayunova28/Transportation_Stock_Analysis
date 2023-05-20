@@ -69,7 +69,7 @@ if ticker == 'AKSI':
 
     # Fill missing value using mean imputation
     for i in df_aksi[['Open', 'High', 'Low', 'Close', 'Adj Close', 'Volume']]:
-        df_aksi[i].fillna(df_aksi[i].mean(), inplace=True) /
+        df_aksi[i].fillna(df_aksi[i].mean(), inplace=True) 
 
     # Display the dataframe with font size of 14
     st.checkbox('Use container width', value=True, key='use_container_width')
