@@ -164,7 +164,7 @@ if ticker == 'AKSI':
 
         # Create date range
         start_date = pd.to_datetime('2011-04-01')
-        end_date = pd.to_datetime('2023-04-01')
+        end_date = pd.to_datetime('2026-04-01')
         date_range = pd.date_range(
             start=start_date, end=end_date, periods=len(train_actual) + len(test_actual))
 
