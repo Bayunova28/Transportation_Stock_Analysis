@@ -42,7 +42,8 @@ parameter = st.sidebar.selectbox('Activation - Optimizer',
                                    'Tanh - Adamax'))
 
 # Adding period of datasets
-date_picker = st.sidebar.date_input('Date Picker', datetime.datetime(2011, 4, 1))
+start_date = st.sidebar.date_input('Start Date', datetime.datetime(2011, 4, 1))
+end_date = st.sidebar.date_input('End Date', datetime.datetime(2023, 4, 1))
 
 # Display stock analysis
 ################################################# AKSI.JK ###############################################
@@ -163,7 +164,7 @@ if ticker == 'AKSI':
 
         # Create date range
         start_date = pd.to_datetime('2011-04-01')
-        end_date = pd.to_datetime('2026-04-01')
+        end_date = pd.to_datetime('2023-04-01')
         date_range = pd.date_range(
             start=start_date, end=end_date, periods=len(train_actual) + len(test_actual))
 
