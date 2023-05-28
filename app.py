@@ -42,8 +42,7 @@ parameter = st.sidebar.selectbox('Activation - Optimizer',
                                    'Tanh - Adamax'))
 
 # Adding period of datasets
-start_date = st.sidebar.date_input('Start Date', datetime.datetime(2011, 4, 1))
-end_date = st.sidebar.date_input('End Date', datetime.datetime(2026, 4, 1))
+date_picker = st.sidebar.date_input('Date Picker', datetime.datetime(2011, 4, 1))
 
 # Display stock analysis
 ################################################# AKSI.JK ###############################################
