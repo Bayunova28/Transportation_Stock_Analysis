@@ -43,7 +43,7 @@ parameter = st.sidebar.selectbox('Activation - Optimizer',
 
 # Adding period of datasets
 start_date = st.sidebar.date_input('Start Date', datetime.datetime(2011, 4, 1))
-end_date = st.sidebar.date_input('End Date', datetime.datetime(2023, 4, 1))
+end_date = st.sidebar.date_input('End Date', datetime.datetime(2026, 4, 1))
 
 # Display stock analysis
 ################################################# AKSI.JK ###############################################
