@@ -54,7 +54,7 @@ if ticker == 'AKSI':
 
     # Read the data
     df_aksi = pd.read_excel(
-        'transportation_stocks.xlsx', sheet_name='AKSI.JK')
+        'transportation_stocks.xlsx', sheet_name='AKSI.JK')asdasdasd
 
     # Convert the date column to datetime format
     df_aksi['Date'] = [datetime.datetime.strptime(str(target_date).split(
