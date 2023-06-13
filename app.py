@@ -7707,7 +7707,7 @@ elif ticker == 'SAFE':
     elif parameter == 'ReLU - Adam':
         st.write('#### Current Stock Price Prediction')
         # Build LSTM model
-        model = load_model('models/safe_relu_adam.h5')
+        model = load_model('models/cmpp_relu_adam.h5')
         # Generate predictions
         train_predict = model.predict(X_train)
         test_predict = model.predict(X_test)
