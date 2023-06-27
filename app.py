@@ -30,16 +30,16 @@ ticker = st.sidebar.selectbox('Choose Your Ticker',
                               ('AKSI', 'CMPP', 'SAFE', 'SMDR', 'TMAS', 'WEHA'))
 
 # Adding LSTM activation selection
-parameter = st.sidebar.selectbox('Activation - Optimizer',
-                                  ('Default', 'Linear - Adam', 'Linear - AdaGrad',
-                                   'Linear - Nadam', 'Linear - RMSProp', 'Linear - AdaDelta',
-                                   'Linear - SGD', 'Linear - AdaMax', 'ReLU - Adam', 'ReLU - AdaGrad',
-                                   'ReLU - Nadam', 'ReLU - RMSProp', 'ReLU - AdaDelta', 'ReLU - SGD',
-                                   'ReLU - AdaMax', 'Sigmoid - Adam', 'Sigmoid - AdaGrad',
-                                   'Sigmoid - Nadam', 'Sigmoid - RMSProp', 'Sigmoid - AdaDelta',
-                                   'Sigmoid - SGD', 'Sigmoid - AdaMax', 'Tanh - Adam', 'Tanh - AdaGrad',
-                                   'Tanh - Nadam', 'Tanh - RMSProp', 'Tanh - AdaDelta', 'Tanh - SGD',
-                                   'Tanh - AdaMax'))
+parameter = st.sidebar.selectbox('Parameter (Activation & Optimizer)',
+                                  ('Default', 'Linear & Adam', 'Linear & AdaGrad',
+                                   'Linear & Nadam', 'Linear & RMSProp', 'Linear & AdaDelta',
+                                   'Linear & SGD', 'Linear & AdaMax', 'ReLU & Adam', 'ReLU & AdaGrad',
+                                   'ReLU & Nadam', 'ReLU & RMSProp', 'ReLU & AdaDelta', 'ReLU & SGD',
+                                   'ReLU & AdaMax', 'Sigmoid & Adam', 'Sigmoid & AdaGrad',
+                                   'Sigmoid & Nadam', 'Sigmoid & RMSProp', 'Sigmoid & AdaDelta',
+                                   'Sigmoid & SGD', 'Sigmoid & AdaMax', 'Tanh & Adam', 'Tanh & AdaGrad',
+                                   'Tanh & Nadam', 'Tanh & RMSProp', 'Tanh & AdaDelta', 'Tanh & SGD',
+                                   'Tanh & AdaMax'))
 
 # Define the filter range
 filter_start_date = datetime.datetime(2023, 4, 1)
