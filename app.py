@@ -1244,7 +1244,7 @@ if ticker == 'AKSI':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-    elif parameter == 'ReLU - Nadam (Recommend)':
+    elif parameter == 'ReLU - Nadam':
         st.write('#### Current Stock Price Prediction')
         # Build LSTM model
         model = load_model('models/aksi_relu_nadam.h5')
