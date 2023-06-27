@@ -3334,7 +3334,7 @@ if ticker == 'AKSI':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+st.sidebar.write('Recommendation of Parameter (Activation & Optimizer): ReLU & Nadam')
 ################################################# CMPP.JK ###############################################
 elif ticker == 'CMPP':
     st.image(Image.open('assets/air-asia-icon.png'), use_column_width=False, width=280)
