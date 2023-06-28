@@ -30,16 +30,16 @@ ticker = st.sidebar.selectbox('Choose Your Ticker',
                               ('AKSI', 'CMPP', 'SAFE', 'SMDR', 'TMAS', 'WEHA'))
 
 # Adding LSTM activation selection
-parameter = st.sidebar.selectbox('Parameter (Activation & Optimizer)',
-                                  ('Default', 'Linear & Adam', 'Linear & AdaGrad',
-                                   'Linear & Nadam', 'Linear & RMSProp', 'Linear & AdaDelta',
-                                   'Linear & SGD', 'Linear & AdaMax', 'ReLU & Adam', 'ReLU & AdaGrad',
-                                   'ReLU & Nadam', 'ReLU & RMSProp', 'ReLU & AdaDelta', 'ReLU & SGD',
-                                   'ReLU & AdaMax', 'Sigmoid & Adam', 'Sigmoid & AdaGrad',
-                                   'Sigmoid & Nadam', 'Sigmoid & RMSProp', 'Sigmoid & AdaDelta',
-                                   'Sigmoid & SGD', 'Sigmoid & AdaMax', 'Tanh & Adam', 'Tanh & AdaGrad',
-                                   'Tanh & Nadam', 'Tanh & RMSProp', 'Tanh & AdaDelta', 'Tanh & SGD',
-                                   'Tanh & AdaMax'))
+parameter = st.sidebar.selectbox('Parameter (Activation - Optimizer)',
+                                  ('Default', 'Linear - Adam', 'Linear - AdaGrad',
+                                   'Linear - Nadam', 'Linear - RMSProp', 'Linear - AdaDelta',
+                                   'Linear - SGD', 'Linear - AdaMax', 'ReLU - Adam', 'ReLU - AdaGrad',
+                                   'ReLU - Nadam', 'ReLU - RMSProp', 'ReLU - AdaDelta', 'ReLU - SGD',
+                                   'ReLU - AdaMax', 'Sigmoid - Adam', 'Sigmoid - AdaGrad',
+                                   'Sigmoid - Nadam', 'Sigmoid - RMSProp', 'Sigmoid - AdaDelta',
+                                   'Sigmoid - SGD', 'Sigmoid - AdaMax', 'Tanh - Adam', 'Tanh - AdaGrad',
+                                   'Tanh - Nadam', 'Tanh - RMSProp', 'Tanh - AdaDelta', 'Tanh - SGD',
+                                   'Tanh - AdaMax'))
 
 # Define the filter range
 filter_start_date = datetime.datetime(2023, 4, 1)
@@ -3334,6 +3334,7 @@ if ticker == 'AKSI':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
+    st.sidebar.write('Parameter Recommendation: ReLU - Nadam')
 ################################################# CMPP.JK ###############################################
 elif ticker == 'CMPP':
     st.image(Image.open('assets/air-asia-icon.png'), use_column_width=False, width=280)
@@ -6728,7 +6729,7 @@ elif ticker == 'CMPP':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+    st.sidebar.write('Parameter Recommendation: ReLU - Adam')
 ################################################# SAFE.JK ###############################################
 elif ticker == 'SAFE':
     st.image(Image.open('assets/safe-icon.png'), use_column_width=False, width=300)
@@ -10013,7 +10014,7 @@ elif ticker == 'SAFE':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+    st.sidebar.write('Parameter Recommendation: ReLU - Nadam')
 ################################################# SMDR.JK ###############################################
 elif ticker == 'SMDR':
     st.image(Image.open('assets/smdr-icon.png'), use_column_width=False, width=600)
@@ -13298,7 +13299,7 @@ elif ticker == 'SMDR':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+    st.sidebar.write('Parameter Recommendation: Linear - Adam')
 ################################################# TMAS.JK ###############################################
 elif ticker == 'TMAS':
     st.image(Image.open('assets/tmas-icon.png'), use_column_width=False, width=500)
@@ -16583,7 +16584,7 @@ elif ticker == 'TMAS':
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+    st.sidebar.write('Parameter Recommendation: Linear - Adam')
 ################################################# WEHA.JK ###############################################
 else:
     st.image(Image.open('assets/weha-icon.png'), use_column_width=False, width=400)
@@ -19868,7 +19869,7 @@ else:
             f'<span style="font-size:20px">Root Mean Squared Error (RMSE) : {rmse}</span>', unsafe_allow_html=True)
         st.write(
             f'<span style="font-size:20px">R-Squared (R2) : {r2}</span>', unsafe_allow_html=True)
-
+    st.sidebar.write('Parameter Recommendation: Linear - Adam')
 # Let's remove the footer watermark
 hide_streamlit_style = '''
             <style>
