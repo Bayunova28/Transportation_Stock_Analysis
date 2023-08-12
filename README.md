@@ -12,14 +12,7 @@
 ## Background
 <img src="https://github.com/Bayunova28/Transportation_Stock_Analysis/blob/master/background.jpg" height="450" width="1100">
 
-<p align="justify">Inflation growth in Indonesia and other countries impacts the currency value and investors' purchasing power, particularly in the transportation sector. Early prediction efforts using data mining techniques like Long Short-Term Memory (LSTM) with different activation and optimizer
-parameters can help investors make informed decisions and prevent losses. This research implemented LSTM with various activation parameters (linear, relu, sigmoid, and tanh) and optimizers
-(adam, adagrad, nadam, rmsprop, adadelta, SGD, and adamax) using the CRISP-DM framework,
-Python programming language, and Visual Studio Code tools. The aim was to predict stock
-prices in Indonesia's transportation sector. The results showed promising evaluation metrics
-(MAE, MAPE, MSE, R-Squared, RMSE) and statistical tests (Shapiro-Wilk) for Air Asia Indonesia's stock (CMPP.JK) within an elapsed time of 82.16 minutes. Furthermore, an agile software
-development approach was used to develop a web-based information system using streamlit and
-the LSTM model.</p>
+<p align="justify">Inflation growth occurs in several international countries as well as Indonesia. This causes currency values to rise and affects the purchasing power of stocks for investors. Stocks affected by inflation growth occur in various sectors, especially transportation. This requires early prediction efforts to be made so that investors can make decisions in making investments so that no losses occur. One solution that will be carried out is to use data mining techniques using a deep learning approach, namely Long Short-Term Memory (LSTM) using activation and optimizer parameter comparisons. The activation parameters used include linear, relu, sigmoid, and tanh. While the optimizers used include adam, adagrad, nadam, rmsprop, adadelta, SGD, and adamax with elapsed time and statistical tests. This research uses the CRISP-DM framework with the Python programming language and the help of tools from Visual Studio Code and aims to predict transportation stock prices in Indonesia.</p>
 
 ## Requirement
 * **Python 3.11.2**
