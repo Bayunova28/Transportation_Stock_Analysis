@@ -41,7 +41,7 @@
 | SAFE.JK | Steady Safe Tbk. | https://finance.yahoo.com/quote/SAFE.JK/history?p=SAFE.JK |
 | SMDR.JK | Samudera Indonesia Tbk. | https://finance.yahoo.com/quote/SMDR.JK/history?p=SMDR.JK |
 | TMAS.JK | Temas Tbk. | https://finance.yahoo.com/quote/TMAS.JK/history?p=TMAS.JK |
-| WEHA.JK | WEHA Transportasi Indonesia Tbk. | https://finance.yahoo.com/quote/WEHA.JK/history?p=WEHA.JK |
+| WEHA.JK | WEHA Transportasi Indonesia Tbk.    | https://finance.yahoo.com/quote/WEHA.JK/history?p=WEHA.JK |
   
 ## Acknowledgement
 The authors would like to thank Universitas Multimedia Nusantara for providing support in this research.
