@@ -1,7 +1,7 @@
 # Transportation Stock Analysis
 * Instructor :  <b>Dinar Ajeng Kristiyanti, S.Kom., M.Kom.</b>
 * Place : <b>Universitas Multimedia Nusantara</b>
-* Course : <b>Bachelor of Computer Science Research</b>
+* Course : <b>Computer Science Research</b>
 
 ## Table of Contents
 * [Background](#background)
