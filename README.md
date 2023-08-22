@@ -44,4 +44,4 @@
 | WEHA.JK | WEHA Transportasi Indonesia Tbk.    | https://finance.yahoo.com/quote/WEHA.JK/history?p=WEHA.JK |
   
 ## Acknowledgement
-The authors would like to thank Universitas Multimedia Nusantara for providing support in this research.
+The authors would like to thank Multimedia Nusantara University for providing support in this research.
