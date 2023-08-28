@@ -19,6 +19,15 @@
 * **Tensorflow 2.12.0**
 * **Visual Studio Code 1.77.0**
 * **Streamlit 1.19.0**
+* **Jupyter Notebook / Google Colaboratory**
+* **Keras**
+* **Pillow**
+* **Scikit-Learn**
+* **Datetime**
+* **Plotly**
+* **Numpy**
+* **Openpyxl**
+* **Python Math**
 
 ## Inspiration
 * Evaluate the success of various activation and optimizer comparisons used to measure the performance of MAPE, MAE, RMSE, MSE, R-squared, elapsed time, and statistical tests.
