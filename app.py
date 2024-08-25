@@ -144,13 +144,13 @@ if ticker == 'AKSI':
     X_test, y_test = create_sequences(
         test_scaled, test_scaled, sequence_length)
     
-#     if parameter == 'Default':
-#         st.write('#### Current Stock Price Prediction')
-#         # Build LSTM model
-#         model = load_model('models/aksi_lstm_default.h5')
-#         # Generate predictions
-#         train_predict = model.predict(X_train)
-#         test_predict = model.predict(X_test)
+    if parameter == 'Default':
+        st.write('#### Current Stock Price Prediction')
+        # Build LSTM model
+        model = load_model('models/aksi_lstm_default.h5')
+        # Generate predictions
+        train_predict = model.predict(X_train)
+        test_predict = model.predict(X_test)
 
 #         # Invert scaling for predictions
 #         train_predict = scaler.inverse_transform(train_predict)
