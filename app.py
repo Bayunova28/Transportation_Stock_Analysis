@@ -147,7 +147,7 @@ if ticker == 'AKSI':
     if parameter == 'Default':
         st.write('#### Current Stock Price Prediction')
         # Build LSTM model
-        model = load_model('models/aksi_lstm_default.h5')
+        model = load_model('models/aksi_lstm_default.hdf5')
         # Generate predictions
         train_predict = model.predict(X_train)
         test_predict = model.predict(X_test)
