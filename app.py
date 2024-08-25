@@ -121,36 +121,36 @@ if ticker == 'AKSI':
     train_df = target_df[:train_size]
     test_df = target_df[train_size:]
 
-    # Scale the data using MinMaxScaler
-    scaler = MinMaxScaler(feature_range=(0, 1))
-    train_scaled = scaler.fit_transform(train_df)
-    test_scaled = scaler.transform(test_df)
+    # # Scale the data using MinMaxScaler
+    # scaler = MinMaxScaler(feature_range=(0, 1))
+    # train_scaled = scaler.fit_transform(train_df)
+    # test_scaled = scaler.transform(test_df)
 
-    # Define the sequence length and number of features
-    sequence_length = 60
-    num_features = 1
-    # Define the function to create sequences
+    # # Define the sequence length and number of features
+    # sequence_length = 60
+    # num_features = 1
+    # # Define the function to create sequences
 
-    def create_sequences(X, y, seq_length):
-        X_sequences, y_sequences = [], []
-        for i in range(seq_length, len(X)):
-            X_sequences.append(X[i-seq_length:i, :])
-            y_sequences.append(y[i, :])
-        return np.array(X_sequences), np.array(y_sequences)
-    # Create training sequences and labels
-    X_train, y_train = create_sequences(
-        train_scaled, train_scaled, sequence_length)
-    # Create testing sequences and labels
-    X_test, y_test = create_sequences(
-        test_scaled, test_scaled, sequence_length)
+    # def create_sequences(X, y, seq_length):
+    #     X_sequences, y_sequences = [], []
+    #     for i in range(seq_length, len(X)):
+    #         X_sequences.append(X[i-seq_length:i, :])
+    #         y_sequences.append(y[i, :])
+    #     return np.array(X_sequences), np.array(y_sequences)
+    # # Create training sequences and labels
+    # X_train, y_train = create_sequences(
+    #     train_scaled, train_scaled, sequence_length)
+    # # Create testing sequences and labels
+    # X_test, y_test = create_sequences(
+    #     test_scaled, test_scaled, sequence_length)
     
-    if parameter == 'Default':
-        st.write('#### Current Stock Price Prediction')
-        # Build LSTM model
-        model = load_model('models/aksi_lstm_default.h5')
-        # Generate predictions
-        train_predict = model.predict(X_train)
-        test_predict = model.predict(X_test)
+    # if parameter == 'Default':
+    #     st.write('#### Current Stock Price Prediction')
+    #     # Build LSTM model
+    #     model = load_model('models/aksi_lstm_default.h5')
+    #     # Generate predictions
+    #     train_predict = model.predict(X_train)
+    #     test_predict = model.predict(X_test)
 
 #         # Invert scaling for predictions
 #         train_predict = scaler.inverse_transform(train_predict)
